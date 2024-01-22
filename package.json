@@ -9,10 +9,11 @@
     "lint": "next lint",
     "prettier:format": "prettier --write .",
     "prettier:check": "prettier --check \"**/*.{ts,tsx,json}\"",
-    "eslint:format": "eslint . --ext js,jsx,ts,tsx --fix --max-warnings=0 --config .eslintrc.json --no-eslintrc",
+    "eslint:format": "eslint src --fix",
     "prepare": "husky install"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-react": "^0.314.0",
