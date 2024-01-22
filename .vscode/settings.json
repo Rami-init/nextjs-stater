@@ -1,0 +1,22 @@
+{
+  // For ESLint
+  "eslint.validate": [
+    "react",
+    "javascript",
+    "javascriptreact",
+    "html",
+    "json",
+    "jsonc"
+  ],
+  "editor.formatOnSave": true,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  // For Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.requireConfig": true,
+  "prettier.prettierPath": "./node_modules/prettier",
+  "prettier.configPath": "~/.prettierrc"
+  // Svelte for VS Code
+}

@@ -1,0 +1,7 @@
+# Ignore artifacts:
+**/node_modules/*
+**/out/*
+**/.next/*
+coverage
+pnpm-lock.yaml
+src/styles/globals.css
