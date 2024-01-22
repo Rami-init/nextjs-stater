@@ -1,13 +1,6 @@
 {
   // For ESLint
-  "eslint.validate": [
-    "react",
-    "javascript",
-    "javascriptreact",
-    "html",
-    "json",
-    "jsonc"
-  ],
+  "eslint.validate": ["react", "javascript", "javascriptreact", "html", "json", "jsonc"],
   "editor.formatOnSave": true,
 
   "editor.codeActionsOnSave": {
