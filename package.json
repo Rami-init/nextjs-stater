@@ -59,7 +59,7 @@
   "lint-staged": {
     "src/**/*": [
       "prettier --write --ignore-unknown",
-      "pnpm run eslint:format"
+      "eslint src --fix"
     ]
   }
 }
