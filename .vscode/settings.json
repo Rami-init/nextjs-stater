@@ -11,5 +11,4 @@
   "prettier.requireConfig": true,
   "prettier.prettierPath": "./node_modules/prettier",
   "prettier.configPath": "~/.prettierrc"
-  // Svelte for VS Code
 }

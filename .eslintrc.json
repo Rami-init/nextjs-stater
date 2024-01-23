@@ -5,7 +5,8 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
-    "prettier"
+    "prettier",
+    "plugin:storybook/recommended"
   ],
   "plugins": [
     "prettier",
@@ -43,11 +44,18 @@
       {
         "newlinesBetween": "always",
         "groups": [
-          ["/^next/", "module"],
+          [
+            "/^next/",
+            "module"
+          ],
           "/^@/styles/",
           "/^@/components/",
           "/^@/lib/",
-          ["parent", "sibling", "index"]
+          [
+            "parent",
+            "sibling",
+            "index"
+          ]
         ],
         "alphabetize": {
           "order": "asc",
@@ -64,7 +72,10 @@
     "no-console": [
       2,
       {
-        "allow": ["warn", "error"]
+        "allow": [
+          "warn",
+          "error"
+        ]
       }
     ],
     "prettier/prettier": [
