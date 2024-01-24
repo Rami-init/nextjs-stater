@@ -1,11 +1,11 @@
 {
   // For ESLint
   "eslint.validate": ["react", "javascript", "javascriptreact", "html", "json", "jsonc"],
-  "editor.formatOnSave": true,
 
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
+  "editor.formatOnSave": true,
   // For Prettier
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.requireConfig": true,

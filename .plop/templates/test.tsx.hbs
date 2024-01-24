@@ -1,0 +1,12 @@
+import { render, screen } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
+import {{pascalCase name}} from '@/components/{{componentType}}/{{pascalCase name}}';
+
+describe('{{pascalCase name}}', () => {
+  it('should render the heading', () => {
+    render(<{{pascalCase name}} />);
+
+    // Assert
+    screen.getByRole('heading', { name: /{{pascalCase name}}/i });
+  });
+});
