@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  nextstarter:
+    image: nextstarter
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+    restart: always
+    ports:
+      - 3000:3000
+    networks:
+      - my_network
+
+
+networks:
+  my_network:
+    external: true
