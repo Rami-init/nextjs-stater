@@ -3,7 +3,7 @@
   "eslint.validate": ["react", "javascript", "javascriptreact", "html", "json", "jsonc"],
 
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   },
   "editor.formatOnSave": true,
   // For Prettier

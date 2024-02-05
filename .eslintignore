@@ -5,5 +5,5 @@
 coverage
 pnpm-lock.yaml
 src/styles/globals.css
-**/assets/*
+**/stories/assets/*
 **/Configure.mdx
