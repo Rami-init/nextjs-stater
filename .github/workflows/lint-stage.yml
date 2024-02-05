@@ -11,11 +11,21 @@ jobs:
           fetch-depth: 0
       - name: Install required dependencies
         run: |
-          apt update
-          apt install -y sudo
+          sudo apt update
+          sudo apt install -y sudo
           sudo apt install -y git curl
+          # Add Node.js repository
           curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+
+          # Install Node.js
           sudo DEBIAN_FRONTEND=noninteractive apt install -y nodejs
+
+          # Additional safety check
+          if [ $? -eq 0 ]; then
+              echo "Installation completed successfully."
+          else
+              echo "Installation failed. Please check for errors above."
+          fi
       - name: Install pnpm
         run: |
             npm install -g pnpm
