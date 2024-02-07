@@ -6,29 +6,25 @@ jobs:
   commitlint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: main
       - name: Install required dependencies
         run: |
           sudo apt update
           sudo apt install -y sudo
           sudo apt install -y git curl
           # Add Node.js repository
-          curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-
-          # Install Node.js
-          sudo DEBIAN_FRONTEND=noninteractive apt install -y nodejs
-
-          # Additional safety check
-          if [ $? -eq 0 ]; then
-              echo "Installation completed successfully."
-          else
-              echo "Installation failed. Please check for errors above."
-          fi
+          actions/setup-node@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
       - name: Install pnpm
         run: |
             npm install -g pnpm
+            pnpm install
       - name: Print versions
         run: |
           git --version
